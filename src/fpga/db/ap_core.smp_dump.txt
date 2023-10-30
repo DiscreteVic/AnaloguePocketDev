@@ -1,0 +1,63 @@
+
+State Machine - |apf_top|core_top:ic|core_bridge_cmd:icb|tstate
+Name tstate.TARG_ST_WAITRESULT_DSO tstate.TARG_ST_WAITRESULT_RTR tstate.TARG_ST_DATASLOTOP tstate.TARG_ST_READYTORUN tstate.TARG_ST_IDLE 
+tstate.TARG_ST_IDLE 0 0 0 0 0 
+tstate.TARG_ST_READYTORUN 0 0 0 1 1 
+tstate.TARG_ST_DATASLOTOP 0 0 1 0 1 
+tstate.TARG_ST_WAITRESULT_RTR 0 1 0 0 1 
+tstate.TARG_ST_WAITRESULT_DSO 1 0 0 0 1 
+
+State Machine - |apf_top|core_top:ic|core_bridge_cmd:icb|hstate
+Name hstate.ST_DONE_ERR hstate.ST_DONE_CODE hstate.ST_DONE_OK hstate.ST_WORK hstate.ST_PARSE hstate.ST_IDLE 
+hstate.ST_IDLE 0 0 0 0 0 0 
+hstate.ST_PARSE 0 0 0 0 1 1 
+hstate.ST_WORK 0 0 0 1 0 1 
+hstate.ST_DONE_OK 0 0 1 0 0 1 
+hstate.ST_DONE_CODE 0 1 0 0 0 1 
+hstate.ST_DONE_ERR 1 0 0 0 0 1 
+
+State Machine - |apf_top|io_bridge_peripheral:ibs|rx_latch_idx
+Name rx_latch_idx.11 rx_latch_idx.10 rx_latch_idx.01 rx_latch_idx.00 
+rx_latch_idx.00 0 0 0 0 
+rx_latch_idx.01 0 0 1 1 
+rx_latch_idx.10 0 1 0 1 
+rx_latch_idx.11 1 0 0 1 
+
+State Machine - |apf_top|io_bridge_peripheral:ibs|spis
+Name spis.ST_SEND_N spis.ST_SEND_3 spis.ST_SEND_2 spis.ST_SEND_1 spis.ST_SEND_0 spis.ST_SIDLE 
+spis.ST_SIDLE 0 0 0 0 0 0 
+spis.ST_SEND_0 0 0 0 0 1 1 
+spis.ST_SEND_1 0 0 0 1 0 1 
+spis.ST_SEND_2 0 0 1 0 0 1 
+spis.ST_SEND_3 0 1 0 0 0 1 
+spis.ST_SEND_N 1 0 0 0 0 1 
+
+State Machine - |apf_top|io_bridge_peripheral:ibs|state
+Name state.ST_ADDR_0 state.ST_WRITE_2 state.ST_WRITE_1 state.ST_WRITE_0 state.ST_READ_3 state.ST_READ_2 state.ST_READ_1 state.ST_READ_0 state.ST_RESET 
+state.ST_RESET 0 0 0 0 0 0 0 0 0 
+state.ST_READ_0 0 0 0 0 0 0 0 1 1 
+state.ST_READ_1 0 0 0 0 0 0 1 0 1 
+state.ST_READ_2 0 0 0 0 0 1 0 0 1 
+state.ST_READ_3 0 0 0 0 1 0 0 0 1 
+state.ST_WRITE_0 0 0 0 1 0 0 0 0 1 
+state.ST_WRITE_1 0 0 1 0 0 0 0 0 1 
+state.ST_WRITE_2 0 1 0 0 0 0 0 0 1 
+state.ST_ADDR_0 1 0 0 0 0 0 0 0 1 
+
+State Machine - |apf_top|io_pad_controller:ipm|tr_state
+Name tr_state.TR_RX_DONE tr_state.TR_RX_WAITEDGE tr_state.TR_RX_START tr_state.TR_TX_DONE tr_state.TR_TX_CONTINUE tr_state.TR_TX_START tr_state.TR_IDLE 
+tr_state.TR_IDLE 0 0 0 0 0 0 0 
+tr_state.TR_TX_START 0 0 0 0 0 1 1 
+tr_state.TR_TX_CONTINUE 0 0 0 0 1 0 1 
+tr_state.TR_TX_DONE 0 0 0 1 0 0 1 
+tr_state.TR_RX_START 0 0 1 0 0 0 1 
+tr_state.TR_RX_WAITEDGE 0 1 0 0 0 0 1 
+tr_state.TR_RX_DONE 1 0 0 0 0 0 1 
+
+State Machine - |apf_top|io_pad_controller:ipm|state
+Name state.ST_RX_BUTTON_2 state.ST_RX_BUTTON_1 state.ST_IDLE state.ST_RESET state.ST_END_TX 
+state.ST_RESET 0 0 0 0 0 
+state.ST_IDLE 0 0 1 1 0 
+state.ST_RX_BUTTON_1 0 1 0 1 0 
+state.ST_RX_BUTTON_2 1 0 0 1 0 
+state.ST_END_TX 0 0 0 1 1 

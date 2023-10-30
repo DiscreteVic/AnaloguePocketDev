@@ -1,0 +1,18 @@
+IMPLEMENT_INPUT_IN_LCELL=OFF
+INTENDED_DEVICE_FAMILY="Cyclone V"
+INVERT_OUTPUT=OFF
+LPM_HINT=UNUSED
+LPM_TYPE=altddio_bidir
+OE_REG=UNREGISTERED
+POWER_UP_HIGH=OFF
+WIDTH=12
+DEVICE_FAMILY="Cyclone V"
+CBX_AUTO_BLACKBOX=ALL
+datain_h
+datain_l
+dataout_h
+dataout_l
+inclock
+oe
+outclock
+padio

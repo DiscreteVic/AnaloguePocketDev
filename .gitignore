@@ -1,0 +1,118 @@
+# Archivos generados por la compilación de código C
+*.out
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+
+# Archivos generados por IDEs o editores de texto
+/.vscode/
+/.idea/
+
+# Archivos generados por la compilación de VHDL y Verilog
+/work/
+/work-*
+/work_lnx/
+*.lxt
+*.vcd
+*.vvp
+*.vpi
+
+# Carpeta de resultados de simulación en ModelSim (ajusta según tu simulador)
+/modelsim.ini
+/transcript
+/modelsim.wlf
+/wave.do
+
+# Archivos de simulación y síntesis
+*.mti
+*.bak
+*.lck
+*.ngc
+*.npl
+*.xise
+*.syr
+*_beh.*
+*_sim.*
+*_vital.*
+*_prj.*
+
+# Archivos de resultados de síntesis para Xilinx
+*.bit
+*.bin
+*.bmm
+*.dcp
+*.hw
+*.ise
+*.mcs
+*.rpt
+*.xaw
+*_summary.html
+
+# Directorios y archivos de Quartus Prime (ajusta según tu herramienta)
+/db/
+/dbincremental_db/
+/simulation/
+/*.rdb
+/*.rpt
+/*.smsg
+/*.summary
+/*.jdi
+*.qws
+*.sof
+/*.done
+
+# Archivos de ModelSim (ajusta según tu simulador)
+/modelsim.ini
+/transcript
+
+# Carpeta de síntesis de Xilinx Vivado (ajusta según tu herramienta)
+/.Xil/
+/vivado*
+/vhdl
+/srcs/
+/.metadata/
+
+# Archivos temporales generados por Xilinx Vivado
+webtalk.log
+
+# Archivos de proyectos generados por herramientas de diseño
+*.tcl
+*.xise
+*.xproj
+
+# Archivos de resultados de VHDL/Verilog
+*.jou
+*.log
+*.rpt
+*.dcp
+*.bit
+*.lso
+*.bin
+
+# Carpeta de síntesis de Intel Quartus (ajusta según tu herramienta)
+/db/
+
+# Archivos generados por Intel Quartus
+/*.rdb
+/*.rpt
+/*.summary
+/*.done
+/*.smsg
+/*.qws
+*.sof
+
+# Archivos de archivos de proyecto de Intel Quartus
+*.qpf
+*.qsf
+*.qip
+
+# Archivos generados por Synopsys Design Compiler (ajusta según tu herramienta)
+*.svf
+
+DiscreteVic*/
+
+*.zip
