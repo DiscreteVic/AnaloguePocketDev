@@ -114,5 +114,9 @@ webtalk.log
 *.svf
 
 DiscreteVic*/
+src/fpga/output_files/
+src/fpga/db/
+src/fpga/incremental_db/
+src/fpga/greybox_tmp/
 
 *.zip
